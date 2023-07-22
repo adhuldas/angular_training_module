@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #303843;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            height: 87.9vh;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        #contact_style{
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-family:Gill Sans;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="contact_style">
+        <h1>Contact Us</h1>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Send Message"
+            style="width: 100%;
+                background: #202631;
+                padding: 20px;
+                border: none;
+                border-radius: 2px;
+                font-size: 16px;font-weight: 400;color: #ffffff;margin-bottom: 10px; color: #000000; background-color: #FFD958;">
+        </form>
+    </div>
+</body>
+</html>

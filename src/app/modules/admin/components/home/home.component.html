@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #303843;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            height: 90vh; 
+        }
+
+        .card {
+            border: none;
+            background-color: #f0f0f0; 
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-text {
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            margin-bottom: 10px;
+        }
+        a.button-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 100px;
+      padding: 10px 20px;
+      background-color: #FFD958;
+      color: grey;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    #card{
+        background-color: #202631; 
+        color:#ffffff; 
+        padding: 30px; 
+        margin-bottom: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container pt-5 pb-5">
+        <div class="col-12">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="card shadow mt-4" id="card">
+                    <div class="card-body">
+                        <img src="https://aio.sfo3.digitaloceanspaces.com/aio-stage/assets/facebook.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                        <h5 class="card-title">facebook</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a class="btn btn" class="button-link">facebook</a>
+                    </div>
+                </div>
+                <div class="card shadow mt-4" id="card">
+                    <div class="card-body">
+                        <img src="https://aio.sfo3.digitaloceanspaces.com/aio-stage/assets/twitter.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                        <h5 class="card-title">twitter</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a class="btn btn" class="button-link">twitter</a>
+                    </div>
+                </div>
+                <div class="card shadow mt-4" id="card">
+                    <div class="card-body">
+                        <img src="https://aio.sfo3.digitaloceanspaces.com/aio-stage/assets/linkedin.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                        <h5 class="card-title">linkedin</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a class="btn btn" class="button-link">linkedin</a>
+                    </div>
+                </div>
+                <div class="card shadow mt-4" id="card">
+                    <div class="card-body">
+                        <img src="https://aio.sfo3.digitaloceanspaces.com/aio-stage/assets/instagram.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                        <h5 class="card-title">instagram</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a class="btn btn" class="button-link">instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

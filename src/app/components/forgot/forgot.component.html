@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgot Password</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #303843;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        .container {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container vh-100">
+        <div class="row justify-content-center h-100 ">
+            <div class="card my-auto shadow" style="background-color: #202631;">
+                <div class="card-body p-5">
+                    <div class="text-center">
+                        <fa-icon [icon]="faLock" class="fa-3x" style="color: #FFD958;"></fa-icon>
+                    </div>
+                    <div class="text-center" style="color: #FFD958;">
+                        <h2>Forgot Password</h2>
+                    </div>
+                    <p style="color: #ffffff;">Please enter your registered email</p>
+                    <form action="" method="" style="width: 100%;
+                    background: #202631;
+                    padding: 20px;
+                    border: none;
+                    border-radius: 2px;
+                    font-size: 16px;font-weight: 400;margin-bottom: 10px;">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" class="form-control" name="" style="width: 100%;
+                    background: #ffffff;
+                    padding: 20px;
+                    border: none;
+                    border-radius: 2px;
+                    font-size: 16px;font-weight: 400;color: #030303;margin-bottom: 10px;"/>
+                    </div>
+                    <input type="submit" class="btn btn-primary w-100" value="Reset Password Link" name=""style="width: 100%;
+                    background: #202631;
+                    padding: 20px;
+                    border: none;
+                    border-radius: 2px;
+                    font-size: 16px;font-weight: 400;color: #ffffff;margin-bottom: 10px; color: #000000; background-color: #FFD958;">
+                    </form>
+                </div>
+                <div class="card-footer text-right" style="width: 100%;
+                padding: 20px;
+                padding-left: 90px;
+                font-size: 16px;font-weight: 400;color: #ffffff;">
+                    <small style="color: #FFD958; align-self: auto;padding-right: 20px;">Ohh I remember <a style="color: #FFD958; align-self: auto;padding-left: 20px;" role="button" (click)="backToLogin()">Back to Login</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

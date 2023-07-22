@@ -1,0 +1,58 @@
+<section class="vh-100" style="background-color: #303843;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;background-color:#202631;">
+            <div class="card-body p-5 text-center">
+  
+              <h3 class="mb-5" style="color: #ffffff;align-self: auto;">Sign in</h3>
+  
+              <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" style="width: 100%;
+              background: #202631;
+              padding: 20px;
+              border: none;
+              border-radius: 2px;
+              font-size: 16px;font-weight: 400;margin-bottom: 10px;">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email"
+                        name="email" style="width: 100%;
+                        background: #ffffff;
+                        padding: 20px;
+                        border: none;
+                        border-radius: 2px;
+                        font-size: 16px;font-weight: 400;color: #020202;margin-bottom: 10px;"/>
+                </div><br>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" class="form-control"
+                        formControlName="password" name="password" style="width: 100%;
+                        background: #ffffff;
+                        padding: 20px;
+                        border: none;
+                        border-radius: 2px;
+                        font-size: 16px;font-weight: 400;color: #030303;margin-bottom: 10px;" />
+                </div>
+                <br>
+                <input class="btn btn-primary btn-lg btn-block" type="submit"
+                style="width: 100%;
+                background: #202631;
+                padding: 20px;
+                border: none;
+                border-radius: 2px;
+                font-size: 16px;font-weight: 400;color: #ffffff;margin-bottom: 10px; color: #000000; background-color: #FFD958;"
+                />
+              </form>
+              <span style="color: #FFD958; align-self: auto;padding-left: 250px;" (click)="forgotPassword()" role="button">forgot password ?</span>
+  
+  
+  
+              <hr class="my-4">
+  
+  
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
