@@ -91,7 +91,7 @@ export class AuthserviceService {
     const querystring = { q: '53.1,-0.13' };
 
     const headers = new HttpHeaders({
-      'X-RapidAPI-Key': '010ee6c686msh31d6ce7fd9c0414p10eacdjsn2dfbdf0ac867',
+      'X-RapidAPI-Key': '<you_key>',
       'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
     });
     this.httpClient.get<any>(url, { headers, params: querystring }).subscribe(
