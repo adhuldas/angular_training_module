@@ -1,3 +1,23 @@
+<head>
+    <style>
+
+    .fade-in-on-hover {
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+    }
+
+    .fade-in-on-hover:hover {
+        opacity: 1;
+    }
+
+    .fade-in-on-hover:not(:hover) {
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+    }
+
+
+    </style>
+</head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" style="text-transform: uppercase;" href="#">{{this.username}}</a>
@@ -7,20 +27,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" routerLink="./home">Home
+                <li class="btn-primary nav-item text-white fade-in-on-hover" routerLinkActive="active">
+                    <a class="nav-link text-white" routerLink="./home">Home
                     </a>
                 </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" routerLink="./about">About</a>
+                <li class="btn-primary nav-item text-white fade-in-on-hover" routerLinkActive="active">
+                    <a class="nav-link text-white" routerLink="./about">About</a>
                 </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" routerLink="./services">Services</a>
+                <li class="btn-primary nav-item text-white fade-in-on-hover" routerLinkActive="active">
+                    <a class="nav-link text-white" routerLink="./services">Services</a>
                 </li>
-                <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" routerLink="./contact">Contact</a>
+                <li class="btn-primary nav-item text-white fade-in-on-hover" routerLinkActive="active">
+                    <a class="nav-link text-white" routerLink="./contact">Contact</a>
                 </li>
-                <li class=" btn-primary nav-item text-white" role="button">
+                <li class="btn-primary nav-item text-white fade-in-on-hover" role="button">
                     <a class="nav-link text-white" (click)="logout()">logout</a>
                 </li>
             </ul>
