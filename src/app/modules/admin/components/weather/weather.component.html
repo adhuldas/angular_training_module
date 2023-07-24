@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Display</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #303843;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        .weather-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10rem;
+            height: 90vh;
+        }
+
+        .weather-icon {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .weather-description {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .weather-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .weather-detail-item {
+            flex: 1;
+            margin: 0 5px;
+        }
+
+        .weather-label {
+            color: #777;
+        }
+
+        .weather-value {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="weather-container">
+        <h2>Weather in <span id="locationName">{{this.area}},{{this.region}},{{this.country}}</span></h2>
+        <img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Weather Icon">
+        <p class="weather-description">{{this.condition}}</p>
+        <div class="weather-details">
+            <div class="weather-detail-item">
+                <span class="weather-label" style="color:#ffffff;">Temperature:</span>
+                <span class="weather-value" id="temperature"> {{this.current_temp}}°C</span>
+            </div>
+            <div class="weather-detail-item">
+                <span class="weather-label" style="color:#ffffff;">Wind:</span>
+                <span class="weather-value" id="wind"> {{this.wind}} N</span>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="weather-detail-item">
+                <span class="weather-label" style="color:#ffffff;">Humidity:</span>
+                <span class="weather-value" id="humidity"> {{this.humidity}}%</span>
+            </div>
+            <div class="weather-detail-item">
+                <span class="weather-label" style="color:#ffffff;">Pressure:</span>
+                <span class="weather-value" id="pressure"> {{this.presure}} mb</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
